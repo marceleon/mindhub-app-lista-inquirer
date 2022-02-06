@@ -11,7 +11,7 @@ const main = async () => {
     console.log('Hola Mudo');
 
     const tareas = new Listado();
-    const arch = new Archivo(__dirname.concat('/database'), 'ListaDeTareas.txt');
+    const arch = new Archivo(__dirname.concat('/database'), 'ListaDeTareas.json');
 
     // Recupero info guardada
     tareas.lista = arch.leer();
